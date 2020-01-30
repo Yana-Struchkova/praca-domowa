@@ -1,0 +1,18 @@
+
+        .slides {
+            font-family: verdana;
+        }
+
+        ul {
+            font-family: verdana;
+            text-align: center;
+        }
+
+        .subtitle {
+            font-size: 30px;
+            font-family: verdana;
+            line-height: 32px;
+            margin: 10px;
+            display: inline-block;
+
+        }

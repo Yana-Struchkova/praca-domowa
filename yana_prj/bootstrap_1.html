@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog podroznika</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="gmaps.js"></script>
+
+    <script>
+        $(function () {
+            var mapObj = new GMaps({
+                el: '#map',
+                lat: 51.488772,
+                lng: 31.304667,
+                zoom: 8
+            });
+            var mapObj1 = new GMaps({
+                el: '#map1',
+                lat: 51.338964,
+                lng: 32.880930,
+                zoom: 14
+            });
+            var mapObj2 = new GMaps({
+                el: '#map2',
+                lat: 50.836704,
+                lng: 32.655657,
+                zoom: 14
+            });
+            var mapObj3 = new GMaps({
+                el: '#map3',
+                lat: 49.842120,
+                lng: 24.032275,
+                zoom: 8
+            });
+            let c = $("#forma");
+            $("#zaloguj").click(function () {
+                c.removeClass("hidden");
+                $("#zaloguj").slideUp();
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="fixed" id="zaloguj">
+        Zaloguj sie
+    </div>
+    <div class="fixed hidden" id="forma">
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Haslo</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Haslo">
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Pamientaj mnie</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+    <div class="container color-back">
+        <div class="row">
+            <div>
+                <h1>Miasta Ukrainy</h1>
+                <ul>
+                    <li><a href="#mCzernihiw"> Czernihiw </a></li>
+                    <li><a href="#mBaturyn">Baturyn</a></li>
+                    <li><a href="#mKaczaniwka">Kaczaniwka </a></li>
+                    <li><a href="#mLwow">Lwow</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <h1 id="mCzernihiw"> Czernihiw</h1>
+                <div id="map" class="map"></div>
+
+
+                <div class="row">
+                    <img src="./hw/czepan.jpg" class="img-thumbnail col-12" alt="Responsive image">
+                </div>
+
+                <p>
+                    Miasto w północnej części Ukrainy, nad Desną. Stolica obwodu czernihowskiego. Jedno z
+                    najstarszych
+                    miast Rusi, pierwsza wzmianka historyczna z 907 w staroruskim latopisie Powieść minionych lat. W
+                    992
+                    roku gród stał się siedzibą biskupstwa. Pierwotnie część Księstwa Siewierskiego. W latach
+                    1024-1036
+                    i 1054-1239 stolica Księstwa Czernihowskiego, ustanowiona przez Mścisława I na mocy pokoju
+                    zawartego
+                    po zwycięstwie nad bratem Jarosławem, wielkim księciem Rusi Kijowskiej.
+                </p>
+                <div class="row">
+                    <img src="./hw/czeteatr.jpeg" class="img-thumbnail col-6" alt="Responsive image">
+                    <img src="./hw/czepusz.jpg" class="img-thumbnail col-6" alt="Responsive image">
+                </div>
+                <hr>
+                <h1 id="mBaturyn"> Baturyn</h1>
+                <div id="map1" class="map"></div>
+                <div class="row">
+                    <img src="./hw/batder.jpg" class="img-thumbnail col-6" alt="Responsive image">
+                    <img src="./hw/batpusz.jpg" class="img-thumbnail col-6" alt="Responsive image">
+                </div>
+                <p>
+                    Baturyn (ukr. Бату́рин) – miasto na Ukrainie, od roku 1991 w rejonie bachmaczackim obwodu
+                    czernihowskiego. Leży nad rzeką Sejm, dopływem Desny.
+                </p>
+                <p>Pałac Rozumowskiego (1799-1803) po restauracji</p>
+
+                <div class="row">
+                    <img src="./hw/batzam.jpg" class="img-thumbnail" alt="Responsive image">
+                </div>
+                <hr>
+                <h1 id="mKaczaniwka"> Kaczaniwka</h1>
+                <div id="map2" class="map"></div>
+                <div class="row">
+                    <img src="./hw/images.jpg" class="img-thumbnail col-12" alt="Responsive image">
+                </div>
+
+                <p>
+                    Pałac w Kaczanówce wart jest oddzielnego artykułu. Chciałbym zaznaczyć, że od niedawna
+                    zaistniała możliwość zamieszkania w jednym z pałacowych skrzydeł, nawet na dłuższy czas. Okna
+                    wychodzą na pałac i park. Pokoje z łazienkami kosztują 90 hrywien za dobę, a wielka mansarda z
+                    półokrągłym oknem i z widokiem na pałacowy cour d’honneur (reprezentacyjny dziedziniec) będzie
+                    nas kosztowała 300 hrywien za dobę. Właśnie w pałacu zatrzymała się moja szanowna teściowa.
+                    Biorąc pod uwagę otoczenie, jej kolejna książka o kijowskich starociach zapowiada się wspaniale.
+                </p>
+                <hr>
+                <h1 id="mLwow"> Lwow</h1>
+
+                <blockquote class="blockquote">
+                    <p class="mb-3">Drogi panie! Proszę nie mówić, bo ja odgadnę sam. Więc w bramie stoi lew i
+                        miasto "rośnie w chwale". Jakieś lwie miasto, jakieś... O, Boże! To przecież Lwów! </p>
+                    <div class="blockquote-footer"><cite>Kornel Makuszyński</cite></div>
+                </blockquote>
+                <div id="map3" class="map"></div>
+                <div class="row">
+                    <img src="./hw/filormonia.jpg" class="img-thumbnail col-6" alt="Responsive image">
+                    <img src="./hw/zam.jpg" class="img-thumbnail col-6" alt="Responsive image">
+                </div>
+                <p>
+                    Kolumna Adama Mickiewicza we Lwowie – pomnik Adama Mickiewicza na Placu Mariackim (obecnie Plac
+                    Mickiewicza, ukr. Площа Міцкевича) na Starym Mieście we Lwowie, neoklasycystyczny, wzniesiony w
+                    latach 1902–1904 według projektu Antoniego Popiela, odsłonięty 30 października 1904. Takoz we
+                    Lwowie sa pomniki Szewczenka, Czormowola, Franka
+                </p>
+
+                <div class="row">
+                    <img src="./hw/adam.jpg" class="img-thumbnail" alt="Responsive image">
+                </div>
+                <p>
+                    Takoz we Lwowie sa pomniki Szewczenka, Czormowola, Franka
+                </p>
+                <div class="row">
+                    <img src="./hw/shewczenko.jpg" class="img-thumbnail col-4" alt="Responsive image">
+                    <img src="./hw/czornowil.jpg" class="img-thumbnail col-4" alt="Responsive image">
+                    <img src="./hw/franko.jpg" class="img-thumbnail col-4" alt="Responsive image">
+                </div>
+                <h5>KOPALNIA KAWY</h5>
+                <p>
+                    Kopalnia kawy to największa lwowska kawiarnia. Jest ona poświęcona historii kawy we Lwowie. W
+                    roku 1683 Jerzy Kulczycki, który urodził się pod Samborem i walczył z Janem III Sobieskim pod
+                    Wiedniem przyczyniając się do zwycięstwa!, przyniósł do Lwowa tradycję picia kawy. Od tego czasu
+                    Lwów został kawową stolicą Polski, a obecnie Ukrainy. W kawiarni jest tak dużo kawy, że jest ona
+                    przechowana pod ziemią!
+                </p>
+                <div class="row">
+                    <img src="./hw/TkQFet-8DSU.jpg" class="img-thumbnail col-6" alt="Responsive image">
+                    <img src="./hw/u_flK6OFJEg.jpg" class="img-thumbnail col-6" alt="Responsive image">
+                </div>
+                <p>
+                    Lwow ma duzo innych ciekawych miejsc, np pomnik tworca pierwszej lampy albo Nikiforu
+                    Krynickiemu- polski malarz
+                </p>
+                <div class="row">
+                    <img src="./hw/lampa.jpg" class="img-thumbnail col-6" alt="Responsive image">
+                    <img src="./hw/mal.jpg" class="img-thumbnail col-6" alt="Responsive image">
+                </div>
+                <div class="row">
+                    <img src="./hw/piwo.jpg" class="img-thumbnail col-6" alt="Responsive image">
+                    <img src="./hw/zmej.jpg" class="img-thumbnail col-6" alt="Responsive image">
+                </div>
+
+
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Miasto</th>
+                            <th scope="col">Kraj</th>
+                            <th scope="col">km od Krakowa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Lwow</td>
+                            <td>Ukraina</td>
+                            <td>326</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Czernihiw</td>
+                            <td>Ukraina</td>
+                            <td>1028</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Kaczaniwka</td>
+                            <td>Ukraina</td>
+                            <td>1049</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Baturyn</td>
+                            <td>Ukraina</td>
+                            <td>1084</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
